@@ -126,7 +126,48 @@
     .about-section { background-color: #ffffff; }
     .about-content { max-width: 900px; margin: 0 auto; font-size: 17px; color: #444; line-height: 1.9; }
     .about-content h2 { color: #1F2A38; font-size: 28px; border-left: 5px solid #F5A623; padding-left: 15px; margin-top: 50px; margin-bottom: 20px;}
-    .highlight-quote { font-size: 20px; font-weight: bold; color: #1F2A38; text-align: center; margin: 30px 0; padding: 20px; background-color: #f8f9fa; border-radius: 8px; border: 1px solid #eee; line-height: 1.6; }
+    
+    /* ========== CEO 名言語錄設計 ========== */
+    .highlight-quote { 
+      position: relative; 
+      font-size: 20px; 
+      font-weight: bold; 
+      color: #1F2A38; 
+      margin: 40px auto; 
+      padding: 35px 30px 25px 50px; 
+      background: linear-gradient(135deg, #ffffff 0%, #f4f7fb 100%); 
+      border-radius: 12px; 
+      border-left: 6px solid #F5A623; 
+      box-shadow: 0 8px 20px rgba(0,0,0,0.06); 
+      line-height: 1.8; 
+      max-width: 750px; 
+    }
+    .highlight-quote::before { 
+      content: "❝"; 
+      position: absolute; 
+      top: 20px; 
+      left: 15px; 
+      font-size: 36px; 
+      color: rgba(245, 166, 35, 0.4); 
+      line-height: 1; 
+      font-family: serif; 
+    }
+    .quote-author { 
+      text-align: right; 
+      font-size: 16px; 
+      color: #64748B; 
+      margin-top: 20px; 
+      font-weight: normal; 
+      border-top: 1px solid #e2e8f0; 
+      padding-top: 15px; 
+      letter-spacing: 1px; 
+    }
+    .quote-author strong { 
+      color: #1F2A38; 
+      font-weight: bold; 
+      margin-left: 8px; 
+      font-size: 18px; 
+    }
     
     /* ========== 關於我們 - 圖片穿插排版 ========== */
     .about-image-wrapper {
@@ -261,7 +302,7 @@
     <div class="nav-links">
       <a href="#about">關於我們</a>
       <a href="#warehouse">倉庫實拍</a>
-      <a href="#categories">收購項目</a>
+      <a href="#categories">收收購項目</a>
       <a href="#process">收購流程</a>
       <a href="#faq">常見問題</a>
     </div>
@@ -306,8 +347,11 @@
       <h1 style="text-align: center; color: #1F2A38; font-size: 34px; margin-bottom: 10px; line-height: 1.4;">
         我們不一樣，<br>因為我們深刻懂您面臨的庫存切貨痛點。
       </h1>
+      
+      <!-- CEO 名言語錄 -->
       <div class="highlight-quote">
         「我們不一樣，因為我們也曾走過庫存爆倉的絕境；<br>我們不一樣，因為我們要徹底顛覆傳統切貨業。」
+        <div class="quote-author">— 酷樂寶執行長<strong>寶包老闆</strong></div>
       </div>
       
       <h2>【我們是誰？】</h2>
