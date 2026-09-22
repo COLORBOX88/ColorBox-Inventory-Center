@@ -128,6 +128,26 @@
     .about-content h2 { color: #1F2A38; font-size: 28px; border-left: 5px solid #F5A623; padding-left: 15px; margin-top: 50px; margin-bottom: 20px;}
     .highlight-quote { font-size: 20px; font-weight: bold; color: #1F2A38; text-align: center; margin: 30px 0; padding: 20px; background-color: #f8f9fa; border-radius: 8px; border: 1px solid #eee; line-height: 1.6; }
     
+    /* ========== 關於我們 - 圖片穿插排版 ========== */
+    .about-image-wrapper {
+      margin: 40px 0;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(31, 42, 56, 0.1);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      background-color: #f8f9fa;
+    }
+    .about-image-wrapper:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(31, 42, 56, 0.15);
+    }
+    .about-image-wrapper img {
+      width: 100%;
+      max-height: 500px;
+      object-fit: cover;
+      display: block;
+    }
+
     .pain-points-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin-bottom: 50px;}
     .pain-point-item { background: transparent; border-bottom: 1px solid #eaeaea; padding: 12px 10px; color: #333; font-weight: bold; font-size: 18px; display: flex; align-items: center; }
     .pain-point-item::before { content: "✔"; margin-right: 12px; color: #F5A623; font-size: 22px; }
@@ -293,9 +313,19 @@
       <h2>【我們是誰？】</h2>
       <p>我們是一群年紀 30 到 40 歲，擁有極強執行力與創新思維的年輕團隊。酷樂寶的誕生，並非一開始就順風順水。我們曾帶著滿腔熱血投入上千萬資金鋪貨全台通路，卻在市場的殘酷考驗下，面臨庫存堆積、倉儲費用暴增、資金週轉不靈的窒息感。正因親身經歷過瀕臨清算的絕望，我們比任何人都更能感同身受貨主在進行庫存處理時的煎熬與血汗。因為淋過雨，所以我們更想為您撐傘。</p>
       
+      <!-- 穿插圖片 1：創業甘苦實拍 -->
+      <div class="about-image-wrapper">
+        <img src="https://image.colorbox.tw/colorbox/Closeout/website/photo/colorbox_employee_work.jpg" alt="酷樂寶團隊親身經歷庫存處理的真實甘苦實拍" loading="lazy">
+      </div>
+
       <p>台灣的經濟命脈來自於無數奮鬥的中小企業與個人商家，這正是我們最重視且全力扶持的核心夥伴。無論您是街邊實體店面、個人網拍賣家、或是正在面臨轉型陣痛期的中小企業，我們深知每一分卡在倉庫裡的資金，都是您辛苦打拼的血汗。因此，我們身為專業的庫存收購廠商，絕不因為貨量多寡而有差別待遇，始終以最積極、同理的態度，為您提供最高效率的庫存品收購與變現救援。</p>
       
       <p>正是這份「將心比心」的堅持，讓我們不僅成為無數小老闆最堅實的後盾，更深獲大型企業的信賴。<strong>我們的合作夥伴涵蓋了國內外知名的食品大廠、重量級跨國電商平台、上市科技集團的實體通路、連鎖生活百貨大賣場、知名母嬰用品連鎖品牌、大型 3C 連鎖通路、甚至是直播帶貨團隊等等。</strong>基於最高標準的商業保密原則，我們從不張揚這些赫赫有名的客戶名單；因為對我們來說，無論您是跨國集團還是正在拚搏的中小企業，只要需要庫存出清，我們都會用同樣龐大的資金實力與最高規格的專業為您服務。</p>
+
+      <!-- 穿插圖片 2：百坪倉儲硬實力 -->
+      <div class="about-image-wrapper">
+        <img src="https://image.colorbox.tw/colorbox/Closeout/website/photo/colorbox_warehouse_overview.jpg" alt="酷樂寶具備龐大資金實力與最高規格的破百坪倉儲空間" loading="lazy">
+      </div>
 
       <p>我們深知您最怕遇到不肖切貨商惡意砍價。酷樂寶是一家合法合規的正規公司（交易皆可合法開立發票），我們保證<strong>絕對不會亂報價</strong>，而是精準依據實際市場狀況與貨品價值，給予您最合理的切貨收購價格。用最真誠的同理心與最高標準的企業誠信，幫助您迅速庫存變現，安全下莊！</p>
 
